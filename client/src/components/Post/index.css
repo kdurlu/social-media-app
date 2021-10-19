@@ -1,0 +1,149 @@
+.post-container {
+    width: 100%;
+    height: 300px;
+
+    padding: 24px 36px;
+
+    /* border-bottom: 2px solid rgba(100, 0, 0, 0.35); */
+    transition: 0.2s;
+
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    margin-top: 16px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.post-container:hover {
+    background-color: rgba(255, 255, 255, 0.65);
+    transition: 0.2s;
+}
+
+.post-container > .header {
+    flex: 1;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin-top: 8px;
+}
+.post-container > .header > .username {
+    font-size: 26px;
+    font-weight: 700;
+    flex: 5;
+}
+.post-container > .header > .date {
+    flex: 2;
+    margin-top: 5px;
+
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.6);
+
+    margin-right: 24px;
+}
+
+.post-container > .header > .settings {
+    padding: 4px;
+    border: transparent solid;
+    border-radius: 32px;
+    transition: 0.3s;
+}
+
+.post-container > .content {
+    flex: 4;
+
+    margin-top: 12px;
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+
+.post-container > .footer {
+    flex: 1;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.post-container > .footer > .button-container {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.post-container > .footer > .misc-container {
+    flex: 5;
+}
+
+.post-container > .footer > .button-container > .comment-icon {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    border: transparent solid;
+    padding: 2px;
+    border-radius: 10px;
+
+    transition: 0.2s;
+}
+.post-container > .footer > .button-container > .like-icon {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    border: transparent solid;
+    padding: 2px;
+    border-radius: 10px;
+
+    transition: 0.2s;
+
+    margin-left: 8px;
+}
+
+.post-container > .footer > .button-container > .comment-icon > .comment-count {
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 8px;
+
+    user-select: none;
+}
+.post-container > .footer > .button-container > .like-icon > .like-count {
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 8px;
+
+    user-select: none;
+}
+
+/* EFFECTS */
+/* .post-container > .header > .settings:hover {
+    transition: 0.3s;
+    background-color: rgba(100, 0, 0, 0.35);
+}
+.post-container > .header > .settings:active {
+    transition: 0.1s;
+    background-color: rgba(100, 0, 0, 0.15);
+} */
+
+.post-container > .footer > .button-container > .comment-icon:hover {
+    transition: 0.3s;
+    background-color: rgba(100, 0, 0, 0.3);
+}
+.post-container > .footer > .button-container > .comment-icon:active {
+    transition: 0.1s;
+    background-color: rgba(100, 0, 0, 0.15);
+}
+.post-container > .footer > .button-container > .like-icon:hover {
+    transition: 0.3s;
+    background-color: rgba(100, 0, 0, 0.3);
+}
+.post-container > .footer > .button-container > .like-icon:active {
+    transition: 0.1s;
+    background-color: rgba(100, 0, 0, 0.15);
+}

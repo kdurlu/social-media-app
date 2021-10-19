@@ -1,0 +1,110 @@
+.home {
+    font-family: sans-serif;
+}
+
+.home > .home-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex: 1;
+}
+
+.home > .home-container > .home-left {
+    flex: 7;
+    display: flex;
+    justify-content: center;
+
+    /* border-right: 2px solid rgba(100, 0, 0, 0.35); */
+}
+.home > .home-container > .home-center {
+    flex: 7;
+    display: flex;
+    flex-direction: column;
+
+    /* border-right: 2px solid rgba(100, 0, 0, 0.35); */
+}
+
+.home > .home-container > .home-center > .input-area {
+    /* border-bottom: 2px solid rgba(100, 0, 0, 0.35); */
+    padding: 16px;
+}
+.home > .home-container > .home-center > .input-area > .text-area {
+    height: 200px;
+    border-radius: 8px;
+    background-color: white;
+
+    padding: 16px;
+}
+.home > .home-container > .home-center > .input-area > .text-area > textarea {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    resize: none;
+    margin-bottom: -40px;
+}
+.home
+    > .home-container
+    > .home-center
+    > .input-area
+    > .text-area
+    > textarea:focus {
+    outline: none;
+}
+
+.home
+    > .home-container
+    > .home-center
+    > .input-area
+    > .text-area
+    > .footer-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.home
+    > .home-container
+    > .home-center
+    > .input-area
+    > .text-area
+    > .footer-area
+    > button {
+    background-color: rgb(0, 0, 0, 0.2);
+    border: transparent solid;
+    border-radius: 4px;
+    margin-left: 12px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.home
+    > .home-container
+    > .home-center
+    > .input-area
+    > .text-area
+    > .footer-area
+    > button:hover {
+    background-color: rgb(0, 0, 0, 0.3);
+    transition: 0.2s;
+}
+
+.home
+    > .home-container
+    > .home-center
+    > .input-area
+    > .text-area
+    > .footer-area
+    > button:active {
+    background-color: rgb(0, 0, 0, 0.5);
+    color: white;
+    transition: 0.2s;
+}
+
+.home > .home-container > .home-right {
+    flex: 7;
+    display: flex;
+    justify-content: center;
+}

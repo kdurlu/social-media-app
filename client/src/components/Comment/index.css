@@ -1,0 +1,135 @@
+.comment-container {
+    width: 100%;
+    height: 250px;
+
+    padding: 24px 36px;
+
+    /* border-bottom: 2px solid rgba(100, 0, 0, 0.35); */
+    transition: 0.2s;
+
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    margin-top: 16px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.comment-container:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: 0.2s;
+}
+
+.comment-container > .header {
+    flex: 1;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin-top: 8px;
+}
+.comment-container > .header > .username {
+    font-size: 22px;
+    font-weight: 700;
+    flex: 5;
+}
+.comment-container > .header > .date {
+    flex: 2;
+    margin-top: 5px;
+
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.6);
+
+    margin-right: 24px;
+}
+
+.comment-container > .header > .settings {
+    padding: 4px;
+    border: transparent solid;
+    border-radius: 32px;
+    transition: 0.3s;
+}
+
+.comment-container > .content {
+    flex: 4;
+
+    margin-top: 12px;
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+.comment-container > .footer {
+    flex: 1;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.comment-container > .footer > .misc-container {
+    flex: 5;
+}
+
+.comment-container > .footer > .button-container > .like-icon {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    border: transparent solid;
+    padding: 2px;
+    border-radius: 10px;
+
+    transition: 0.2s;
+
+    margin-left: 8px;
+}
+
+.comment-container
+    > .footer
+    > .button-container
+    > .comment-icon
+    > .comment-count {
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 8px;
+
+    user-select: none;
+}
+.comment-container > .footer > .button-container > .like-icon > .like-count {
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 8px;
+
+    user-select: none;
+}
+
+/* EFFECTS */
+/* .comment-container > .header > .settings:hover {
+    transition: 0.3s;
+    background-color: rgba(100, 0, 0, 0.35);
+}
+.comment-container > .header > .settings:active {
+    transition: 0.1s;
+    background-color: rgba(100, 0, 0, 0.15);
+} */
+
+.comment-container > .footer > .button-container > .comment-icon:hover {
+    transition: 0.3s;
+    background-color: rgba(100, 0, 0, 0.3);
+}
+.comment-container > .footer > .button-container > .comment-icon:active {
+    transition: 0.1s;
+    background-color: rgba(100, 0, 0, 0.15);
+}
+.comment-container > .footer > .button-container > .like-icon:hover {
+    transition: 0.3s;
+    background-color: rgba(100, 0, 0, 0.3);
+}
+.comment-container > .footer > .button-container > .like-icon:active {
+    transition: 0.1s;
+    background-color: rgba(100, 0, 0, 0.15);
+}
