@@ -51,7 +51,7 @@ const Register = () => {
                 creds.username === '' ||
                 creds.password === ''
             ) {
-                // birisi boşsa handle
+                // check if all areas are filled
                 setAlertText('Fill all fields!');
                 setAlert(true);
                 return;
@@ -60,7 +60,7 @@ const Register = () => {
             if (
                 true
             ) {
-                // mail uygun değilse handle
+                // check if mail is not valid
                 setAlertText(
                     'You can only register with a valid email address.'
                 );
@@ -78,7 +78,7 @@ const Register = () => {
                 creds.username !== '' &&
                 creds.password !== ''
             ) {
-                // her şey doğruysa handle
+                // check if everything is okay
 
                 setLoading(true);
                 axios
@@ -143,7 +143,7 @@ const Register = () => {
 
                 return;
             } else {
-                // bir hata oluştu
+                // an error occured
                 setAlertText('An error occured. Try again later.');
                 setAlert(true);
                 return;
@@ -229,7 +229,7 @@ const Register = () => {
                         {loading ? (
                             <Spinner animation='border' size='sm' />
                         ) : (
-                            'Kayıt Ol'
+                            'Register'
                         )}
                     </Button>
                 </div>
